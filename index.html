@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brew & Byte Café</title>
+<style>
+  :root {
+    --bg: #fbf6ef;
+    --ink: #2b1d14;
+    --accent: #b5532a;
+    --card: #ffffff;
+    --muted: #7a6a5e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, "Times New Roman", serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 18px 6vw; border-bottom: 1px solid #e8dccd; }
+  header h1 { font-size: 1.3rem; }
+  nav a { margin-left: 20px; color: var(--ink); text-decoration: none; font-family: system-ui, sans-serif; font-size: .95rem; }
+  nav a:hover { color: var(--accent); }
+  .hero { text-align: center; padding: 90px 6vw; }
+  .hero h2 { font-size: clamp(2rem, 6vw, 3.4rem); margin-bottom: 14px; }
+  .hero p { color: var(--muted); max-width: 520px; margin: 0 auto 28px; }
+  .btn { display: inline-block; background: var(--accent); color: #fff; padding: 12px 26px; border-radius: 999px; text-decoration: none; font-family: system-ui, sans-serif; }
+  section { padding: 56px 6vw; }
+  section h3 { font-size: 1.7rem; margin-bottom: 24px; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; }
+  .card { background: var(--card); padding: 22px; border-radius: 14px; box-shadow: 0 2px 10px rgba(0,0,0,.06); }
+  .card h4 { margin-bottom: 6px; }
+  .card span { color: var(--accent); font-family: system-ui, sans-serif; font-weight: 600; }
+  .about, .contact { text-align: center; max-width: 620px; margin: 0 auto; color: var(--muted); }
+  footer { text-align: center; padding: 28px; font-size: .85rem; color: var(--muted); border-top: 1px solid #e8dccd; font-family: system-ui, sans-serif; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>☕ Brew &amp; Byte Café</h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Great coffee. Faster Wi-Fi.</h2>
+  <p>A cozy spot for students and freelancers to study, work and unwind.</p>
+  <a class="btn" href="#menu">See the menu</a>
+</div>
+
+<section id="menu">
+  <h3>Our Menu</h3>
+  <div class="grid">
+    <div class="card"><h4>Cold Coffee</h4><p>Chilled, creamy, strong.</p><span>₹180</span></div>
+    <div class="card"><h4>Masala Chai</h4><p>Brewed fresh, every cup.</p><span>₹90</span></div>
+    <div class="card"><h4>Paneer Sandwich</h4><p>Grilled with mint chutney.</p><span>₹150</span></div>
+    <div class="card"><h4>Brownie</h4><p>Warm, with chocolate sauce.</p><span>₹120</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <h3>About Us</h3>
+  <p class="about">Brew &amp; Byte opened in 2026 with one idea: a café where you can focus. Quiet corners, power sockets at every table, and coffee that keeps you going.</p>
+</section>
+
+<section id="contact">
+  <h3>Visit Us</h3>
+  <p class="contact">12 Campus Road, Delhi<br>Open daily, 9 AM – 10 PM<br>hello@brewandbyte.example</p>
+</section>
+
+<footer>© 2026 Brew &amp; Byte Café · Sample site hosted on GitHub Pages</footer>
+
+</body>
+</html>
